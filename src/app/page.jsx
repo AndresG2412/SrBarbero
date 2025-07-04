@@ -2,10 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
+
 import barba from './Images/barba.webp'
+import letras from './Images/LetrasLogo.webp'
 
 export default function Home() {
     const [isMounted, setIsMounted] = useState(false);
+    const [showLetras, setShowLetras] = useState(false);
 
     useEffect(() => {
         setIsMounted(true);
@@ -17,6 +20,13 @@ export default function Home() {
                 src={barba}
                 alt='Barba'
                 className={`w-auto h-1/5 absolute object-cover ${isMounted ? 'animate-fadeInThenMove' : 'opacity-0'}`}
+                priority
+                onAnimationEnd={() => setShowLetras(true)}
+            />
+            <Image
+                src={letras}
+                alt='letras'
+                className={`w-2/3 h-auto absolute object-cover top-60 left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}
                 priority
             />
         </div>
