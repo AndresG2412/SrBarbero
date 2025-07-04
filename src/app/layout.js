@@ -1,4 +1,5 @@
 import "./globals.css";
+import { imperialScript } from './fonts'; // Importa tu fuente
 
 export const metadata = {
     title: "Sr. Barbero",
@@ -7,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="es">
+        <html lang="es" className={`${imperialScript.variable}`}>
             <body>
                 {children}
             </body>

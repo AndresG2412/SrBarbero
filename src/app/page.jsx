@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 
@@ -29,6 +28,7 @@ export default function Home() {
                 className={`w-2/3 h-auto absolute object-cover top-60 left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}
                 priority
             />
-        </div>
+
+            <p className={`mi-parrafo-con-imperial absolute w-full bottom-8 text-3xl text-center left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Mas que un simple corte de pelo</p>        </div>
     )
 }
