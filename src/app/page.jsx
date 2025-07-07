@@ -29,6 +29,8 @@ export default function Home() {
                 priority
             />
 
+            {/* colocar los botones */}
+
             <p className={`mi-parrafo-con-imperial absolute w-full bottom-8 text-3xl text-center left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Mas que un simple corte de pelo</p>        </div>
     )
 }
