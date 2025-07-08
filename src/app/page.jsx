@@ -30,7 +30,13 @@ export default function Home() {
             />
 
             {/* colocar los botones */}
+            <div className='grid grid-cols-2 gap-8 w-10/12 absolute bottom-40 left-1/2 transform -translate-x-1/2'>
+                <button className={`bg-red-200 h-44 rounded-lg ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Boton1</button>
+                <button className={`bg-red-200 h-44 rounded-lg ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Boton2</button>
+                <button className={`bg-red-200 h-44 rounded-lg ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Boton3</button>
+                <button className={`bg-red-200 h-44 rounded-lg ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Boton4</button>
+            </div>
 
-            <p className={`mi-parrafo-con-imperial absolute w-full bottom-8 text-3xl text-center left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Mas que un simple corte de pelo</p>        </div>
+            <p className={`mi-parrafo-con-imperial absolute w-full bottom-12 text-3xl text-center left-1/2 transform -translate-x-1/2 ${showLetras ? 'animate-fadeInThenMoveBefore' : 'opacity-0'}`}>Mas que un simple corte de pelo</p>        </div>
     )
 }
