@@ -79,3 +79,7 @@ body {
 .animate-fadeInThenMoveBefore {
   animation: fadeInThenMoveBefore 1s ease-out;
 }
+
+.btns-primary {
+  transform: translate(0, 0)
+}
