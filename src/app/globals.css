@@ -38,7 +38,6 @@ body {
 }
 
 /* Add this to your global CSS file (e.g., globals.css) */
-
 @keyframes fadeInThenMove {
   /* Start: Invisible and centered */
   0% {
@@ -61,12 +60,13 @@ body {
   }
 }
 
-@keyframes fadeInThenMoveBefore {
+@keyframes FadeInComplete {
   /* Start: Invisible and centered */
   0% {
     opacity: 0;
   }
   100% {
+    visibility: hidden;
     opacity: 1;
   }
 }
@@ -76,10 +76,6 @@ body {
   animation: fadeInThenMove 2s ease-out forwards;
 }
 
-.animate-options {
-  animation: fadeInThenMoveBefore 1s ease-out;
-}
-
-.btns-primary {
-  transform: translate(0, 0)
+.animate-LogoCompleto {
+  animation: FadeInComplete .5s ease-in-out;
 }
