@@ -6,6 +6,7 @@ import barba from './Images/barba.webp'
 import letras from './Images/LetrasLogo.webp'
 
 import ButtonMain from './Components/Common/ButtonMain';
+import ButtonWpp from './Components/Common/ButtonWpp';
 
 export default function Home() {
     const [isMounted, setIsMounted] = useState(false);
@@ -48,9 +49,9 @@ export default function Home() {
                 </div>
 
                 <div className={`flex flex-col md:gap-5 gap-7 md:w-6/12 w-9/12 btns-primary ${showOptions ? 'animate-LogoCompleto' : 'opacity-0'}`}>
-                    <ButtonMain text="Menu" img="/Images/BtnImages/Menu.webp"/>
-                    <ButtonMain text="Ubicacion" img="/Images/BtnImages/Ubi.webp"/>
-                    <ButtonMain text="WhatsApp" img="/Images/BtnImages/Wpp.webp"/>
+                    <ButtonMain ruta="./Location" text="Menu" img="/Images/BtnImages/Menu.webp"/>
+                    <ButtonMain ruta="./Options" text="Ubicacion" img="/Images/BtnImages/Ubi.webp"/>
+                    <ButtonWpp text="WhatsApp" img="/Images/BtnImages/Wpp.webp"/>
                 </div>
                 
                 <p className={`text-center tracking-wide font-semibold text-lg md:w-[286px] w-4/6 mx-auto ${showOptions ? 'animate-LogoCompleto' : 'opacity-0'}`}>"Barberos con muchos años de experiencia, trabajando con dedicacion para poder mejorar tu imagen ante el mundo"</p>
