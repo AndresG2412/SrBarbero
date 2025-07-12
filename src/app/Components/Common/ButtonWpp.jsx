@@ -6,8 +6,6 @@ export default function ButtonWpp({text ,img}) {
 
     const phoneNumber = '3157870130';
 
-
-
     return (
         <button
             onClick={() => {
