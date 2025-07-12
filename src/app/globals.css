@@ -17,6 +17,18 @@
   font-style: normal;
 }
 
+/* animacion de transiciones entre paginas */
+@view-transition{
+  navigation: auto;
+}
+
+::view-transition-group(*){
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform, opacity;
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
