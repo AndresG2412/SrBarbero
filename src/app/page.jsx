@@ -49,8 +49,8 @@ export default function Home() {
                 </div>
 
                 <div className={`flex flex-col md:gap-5 gap-7 md:w-6/12 w-9/12 btns-primary ${showOptions ? 'animate-LogoCompleto' : 'opacity-0'}`}>
-                    <ButtonMain ruta="./Location" text="Menu" img="/Images/BtnImages/Menu.webp"/>
-                    <ButtonMain ruta="./Options" text="Ubicacion" img="/Images/BtnImages/Ubi.webp"/>
+                    <ButtonMain ruta="./Options" text="Menu" img="/Images/BtnImages/Menu.webp"/>
+                    <ButtonMain ruta="./Location" text="Ubicacion" img="/Images/BtnImages/Ubi.webp"/>
                     <ButtonWpp text="WhatsApp" img="/Images/BtnImages/Wpp.webp"/>
                 </div>
                 
