@@ -43,6 +43,10 @@ export default function page() {
                 width={250}
                 height={250}
             />
+
+            <div>
+                <button>Buscar mejor ruta</button>
+            </div>
         </div>
     )
 }
