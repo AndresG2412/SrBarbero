@@ -6,10 +6,11 @@ import Cita from "../../../public/Images/BtnImages/Cita.webp";
 import Atras from "../../../public/Images/BtnImages/Atras.webp";
 
 import UbiMaps from "../../../public/Images/UbiMaps.webp";
+import Locacion from "../../../public/Images/BtnImages/Ubi.webp";
 
 export default function page() {
     return (
-        <div className='w-screen h-screen md:bg-[url(/Images/bgMD.webp)] bg-[url(/Images/bgfinal.webp)] bg-no-repeat bg-cover'>
+        <div className='w-screen h-screen md:bg-[url(/Images/bgMD.webp)] bg-[url(/Images/bgfinal.webp)] bg-no-repeat bg-cover flex flex-col items-center justify-center'>
             <Image
                 src={LogoH}
                 alt='Logo Horizontal'
@@ -44,8 +45,15 @@ export default function page() {
                 height={250}
             />
 
-            <div>
-                <button>Buscar mejor ruta</button>
+            <div className="flex items-center justify-center mt-10">
+                <button className="py-2 mx-auto px-4 tracking-wider font-semibold uppercase bg-blue-500 text-white rounded-md hover:bg-blue-600 transition duration-300">
+                    <Image
+                        src={Locacion}
+                        alt='Ubicacion'
+                        className='w-6 h-6 inline-block mr-2'
+                    />
+                    Buscar mejor ruta
+                </button>
             </div>
         </div>
     )
