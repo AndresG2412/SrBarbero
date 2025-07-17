@@ -20,20 +20,22 @@ export default function page() {
             />
 
             <div className="flex justify-center items-center mt-10">
-                <button className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-r-2 pr-4 font-bold tracking-wider text-2xl">
+                <button className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-r-2 pr-4 font-bold tracking-wider text-xl md:text-2xl">
                     <Image
                     src={Atras}
                     alt="img_button"
-                    className="rotate-180 w-14 h-14"/>
-                    <p className="group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Volver Atras</p>
+                    className="rotate-180 w-12 md:w-14 h-12 md:h-14"/>
+                    <p className="hidden md:block group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Volver Atras</p>
+                    <p className="block md:hidden group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Volver <br/> Atras</p>
                 </button>
                 
-                <button className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-l-2 pl-4 font-bold tracking-wider text-2xl">
-                    <p className="group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Separar Cita</p>
+                <button className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-l-2 pl-4 font-bold tracking-wider text-xl md:text-2xl">
+                    <p className="hidden md:block group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Separar Cita</p>
+                    <p className="block md:hidden group-hover:scale-110 group-hover:border-b-1 group-hover:border-amber-300 group-hover:duration-300 group-hover:pb-1">Separar <br/> Cita</p>
                     <Image
                     src={Cita}
                     alt="img_button"
-                    className="w-14 h-14"/>
+                    className="w-12 md:w-14 h-12 md:h-14"/>
                 </button>
             </div>
 
