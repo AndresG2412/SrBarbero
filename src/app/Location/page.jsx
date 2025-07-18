@@ -1,3 +1,5 @@
+'use client'; // Add this directive at the very top of the file
+
 import Image from "next/image";
 
 // importacion desde public
@@ -9,6 +11,7 @@ import UbiMaps from "../../../public/Images/UbiMaps.webp";
 import Locacion from "../../../public/Images/BtnImages/Ubi.webp";
 
 export default function page() {
+
     return (
         <div className='w-screen h-screen md:bg-[url(/Images/bgMD.webp)] bg-[url(/Images/bgfinal.webp)] bg-no-repeat bg-cover flex flex-col items-center justify-center'>
             <Image
@@ -20,7 +23,7 @@ export default function page() {
             />
 
             <div className="flex justify-center items-center mt-10">
-                <button className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-r-2 pr-4 font-bold tracking-wider text-xl md:text-2xl">
+                <button onClick={() => {  window.location.href = '/';}} className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-r-2 pr-4 font-bold tracking-wider text-xl md:text-2xl">
                     <Image
                     src={Atras}
                     alt="img_button"
