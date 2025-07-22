@@ -22,6 +22,8 @@ export default function page() {
                 height={100}
             />
 
+            {/* racha */}
+
             <div className="flex justify-center items-center mt-10">
                 <button onClick={() => {  window.location.href = '/';}} className="border-white group hover:cursor-pointer flex items-center justify-center gap-x-3 border-r-2 pr-4 font-bold tracking-wider text-xl md:text-2xl">
                     <Image
